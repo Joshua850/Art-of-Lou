@@ -1,0 +1,259 @@
+.App {
+  text-align: center;
+  background-color: rgb(242, 205, 215);
+  font-family: "Dancing Script", cursive;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+span.navbar-toggler-icon {
+  // background-color: rgb(242, 205, 215);
+  margin: -14px;
+}
+
+.App-header {
+  // background-color: rgb(242, 205, 215);
+  background-image: linear-gradient(0deg, white, #f2cdd7 40%);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //justify-content: center;
+  padding-bottom: 10%;
+  font-family: "Dancing Script", cursive;
+}
+.form-page {
+  padding-bottom: 10%;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.art {
+  height: 450px;
+  width: 450px;
+  border-radius: 250px;
+}
+.body {
+  // background-color: rgb(242, 205, 215);
+  font-family: "Dancing Script", cursive;
+}
+.header {
+  //Controls the section at the top of the page.
+  font-size: 50px;
+  // background-color: #f2cdd7;
+  background-image: linear-gradient(0deg, white, #f2cdd7 40%, #e58c8a);
+  //background-image: linear-gradient(1deg, #eec0c6 1%, #e58c8a 74%, white);
+}
+.icon {
+  //Instagram icon
+  padding-top: 15px;
+  height: 50px;
+  margin-top: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-collapse {
+  // This Controls the space where the Home,Submit buttons etc. are
+  // stored when the window gets smaller.
+
+  justify-content: space-around;
+}
+.nav-item.nav-link {
+  margin-left: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  // background-color: rgb(242, 205, 215);
+  list-style-type: none;
+
+  font-family: "Dancing Script", cursive;
+}
+.banner {
+  background-color: rgb(242, 205, 215);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.href {
+  text-decoration: none;
+  color: black;
+}
+.Gallary {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  color: black;
+
+  display: flex;
+  // flex-direction: row;
+  // background-color: rgb(242, 205, 215);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  padding: 2px;
+  transition: 0.3s;
+  &:hover &__image {
+    filter: grayscale(1);
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+
+  &__link {
+    margin: 2px;
+    overflow: hidden;
+
+    &:hover {
+      .gallery__image {
+        filter: grayscale(0);
+      }
+
+      .gallery__caption {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__thumb {
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    width: 70%;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.image-item__btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.image-item {
+  display: flex;
+  margin: 10px 0;
+}
+
+// .FileUploadPage {
+//   font-family: "Roboto", sans-serif;
+//   background-color: rgb(242, 205, 215);
+//   min-height: 60vh;
+//   padding-bottom: 40%;
+// }
+form {
+  font-family: "Roboto", sans-serif;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+input {
+  margin: 2px;
+  border-radius: 3px;
+  font-family: "Raleway", sans-serif;
+  margin-right: 5px;
+  margin-top: 10px;
+  width: 90%;
+  height: 50px;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  border: 1px solid #cfcfcf;
+  padding-left: 10px;
+}
+textarea {
+  border-radius: 3px;
+  font-family: "Raleway", sans-serif;
+  margin-right: 5px;
+  margin-top: 10px;
+  width: 90%;
+  height: 50px;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  border: 1px solid #cfcfcf;
+  padding-left: 10px;
+}
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  color: white;
+  width: 30%;
+  height: 48px;
+  background-color: #ff5a00;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: background-color 0.3s ease-out, color 0.3s ease-out;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+.logo {
+  display: flex;
+}
+@media only screen and (max-width: 988px) {
+  .logo {
+    visibility: hidden;
+    height: 0px;
+  }
+}
+.homepage {
+  // background-color: rgb(242, 205, 215);
+  // background-image: linear-gradient(0deg, white, #f2cdd7 40%);
+}
+.art-banner {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+}
+.about {
+  width: 70%;
+  text-align: justify;
+  justify-content: space-around;
+  color: black;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+.footer {
+  height: 150px;
+  width: 100%;
+  background-color: rgb(218, 218, 218);
+}
+.about-sect {
+  margin: 20px;
+}
